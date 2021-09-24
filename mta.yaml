@@ -4,7 +4,7 @@ version: 0.0.1
 modules:
 - name: approvals-module
   type: com.sap.application.content
-  path: a-module
+  path: approvals-module
   requires:
   - name: wm_workflow
     parameters:
