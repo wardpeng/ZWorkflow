@@ -1,0 +1,17 @@
+_schema-version: "3.2"
+ID: ZWorkflow2
+version: 0.0.1
+modules:
+- name: approvals-module
+  type: com.sap.application.content
+  path: a-module
+  requires:
+  - name: wm_workflow
+    parameters:
+      content-target: true
+resources:
+- name: wm_workflow
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: workflow
+    service-plan: lite
